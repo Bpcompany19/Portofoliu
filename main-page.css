@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;}
+
+/* Utilitate  */
+.main-bg {
+    background:#01233f;
+}
+
+.secondary-bg {
+    background: #4b95d6;
+}
+
+.main-text {
+    color: #01233f;
+}
+
+.secondary-text {
+    color:#4b95d6;
+}
+
+.btn-primary {
+    background: #4b95d6;
+    padding: 0.80rem;
+    border-radius: 10px;
+    color: #01233f;
+    transition: all 0.3s ease-in-out;
+    border: #333 2px solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-primary:hover, .btn-edette:hover {
+    background: #2b75c6;
+    color: white;
+}
+
+.btn-edette {
+    background: #56391c;
+    padding: 0.80rem;
+    border-radius: 10px;
+    color: #cc9863;
+    transition: all 0.3s ease-in-out;
+    border: #333 2px solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    height: 200px;
+    width: 200px;
+    background: url(/main-page-img/Logo_BPC.png) no-repeat center center/cover;
+    display: inline-block;
+}
+
+header .line {
+    background-color: #01233f;
+    width: 7px;
+    height: 65px;
+    margin: 0 2rem;
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Metal Mania', cursive;
+    color:  #01233f;
+}
+
+    section .container{
+        padding: 2rem 4rem;
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+    }
+
+    section .container .site {
+        padding: 2rem 1rem;
+        background: #666;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .container .site img {
+        width: 100%;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        border-radius: 10px;
+    }
+    
+    section .container .site a {
+        text-align: center;
+        padding: 0.75rem;
+        text-decoration: none;
+        display: inline-block;
+        width: 40%;
+    }
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h3 {
+    color: #ccc;
+}
