@@ -226,12 +226,16 @@ p{margin:0.75rem 0;}
   border:dotted 1px var(--secondary-color)
 }
 #reservation .map{
-  /* background:url("./img/map.JPG") no-repeat  ; */
   border:solid 1px #333;
   overflow:scroll;
-  height:450px;
-  
+  height:500px;
 }
+
+#reservation .map .map2 {
+  display: none;
+}
+
+
 #reservation .contact-form{
   border-bottom: solid 1px #333;
 }
@@ -298,4 +302,14 @@ p{margin:0.75rem 0;}
 
 .btn-submit:hover {
   background: var(--secondary-color);
+}
+
+@media (min-width:1940px) {
+  #reservation .map .map1 {
+    display: none;
+  }
+
+  #reservation .map .map2 {
+    display: inline;
+  }
 }

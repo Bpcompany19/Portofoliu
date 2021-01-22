@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden;
+	overflow-y: visible; */
 }
 
 body {
@@ -61,7 +63,7 @@ header {
 header .logo {
     height: 200px;
     width: 200px;
-    background: url(/main-page-img/Logo_BPC.png) no-repeat center center/cover;
+    background: url("./main-page-img/Logo_BPC.png") no-repeat center center/cover;
     display: inline-block;
 }
 
@@ -80,15 +82,16 @@ header h1 {
     color:  #01233f;
 }
 
-    section .container{
+/* Section */
+section .container{
         padding: 2rem 4rem;
         margin: 3rem auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3rem;
-    }
+}
 
-    section .container .site {
+section .container .site {
         padding: 2rem 1rem;
         background: #666;
         border-radius: 5px;
@@ -96,33 +99,50 @@ header h1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+}
 
-    section .container .site img {
+section .container .site img {
         width: 100%;
         padding: 0 1.5rem 1.5rem 1.5rem;
         border-radius: 10px;
-    }
-    
-    section .container .site a {
+}
+
+section .container .site a {
         text-align: center;
         padding: 0.75rem;
         text-decoration: none;
         display: inline-block;
         width: 40%;
-    }
+}
 
 /* Footer */
 
 footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
+    justify-content: space-evenly;
     width: 100%;
+    padding: 2rem;
+    line-height: 1.3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+footer div {
+    margin: 1rem;
+    max-width: 400px;
+    
+}
+
+footer .contact-info p {
+    border-bottom: #4b95d6 1px solid;
+    padding: 0.75rem;
 }
 
 footer h3 {
     color: #ccc;
+    font-size: 0.8rem;
+}
+
+footer p {
+    color: #4b95d6;
+    padding: 0.5rem 0;
 }
