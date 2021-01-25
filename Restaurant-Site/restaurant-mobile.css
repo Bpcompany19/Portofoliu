@@ -1,0 +1,87 @@
+/* navbar */
+
+#navbar{
+  flex-direction: column;
+  position: absolute;
+  width:100%;
+  padding-bottom:0.5rem;
+}
+#navbar ul{
+  flex-direction: column;
+  padding-top:0.5rem;
+}
+#navbar ul li{
+  padding:0.3rem;
+  border-bottom: 1px dotted #333 ;
+  width:100%;
+  text-align:center;
+}
+#navbar ul li:last-child {
+border:none;
+}
+
+/* showcase */
+
+#showcase .showcase-content .showcase-text{
+  margin-top:8rem;
+}
+
+/* about section */
+#about .about-img{
+  display:none;
+}
+#about{
+  display:block;
+}
+/* menu section */
+#menu .container img{
+  align-self: center;
+  padding:0.5rem;
+  width:200px;
+}
+#menu .menu-photos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu .menu-photos img{
+  width:300px;
+}
+/* reservation section */
+#reservation .map{
+  display:none;
+}
+#reservation .contact-form form button{
+  width:50%;
+}
+/* dates  */
+#dates .container{
+  flex-direction: column;
+}
+#dates .container .box{
+  width:100%;
+  padding:0.4rem;
+  text-align:center;
+  border-bottom: 1px #333 solid;
+}
+#dates .container .box:last-child{
+  border:none;
+}
+
+@media (max-height:450px)
+{
+  #navbar{
+    flex-direction: row;
+    padding-top:0.5rem;
+  }
+  #navbar ul{
+    flex-direction: row;
+    
+  }
+  #navbar ul li{
+    padding:0.3rem;
+    border:none;
+    text-align:center;
+  }
+}
