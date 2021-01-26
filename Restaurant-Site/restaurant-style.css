@@ -271,11 +271,6 @@ p{margin:0.75rem 0;}
   }
 
 }
-@media(min-width:768px) and (max-width:900px)
-{
-  #dates .container .box p{
-   font-size: 0.9rem;
-  }
 
 
 /* Eu */
@@ -316,5 +311,11 @@ p{margin:0.75rem 0;}
 
   #reservation .map .map2 {
     display: inline;
+  }
+}
+@media (min-width:769px) and (max-width:900px)
+{
+  #dates .container .box p{
+    font-size:0.9rem;
   }
 }
