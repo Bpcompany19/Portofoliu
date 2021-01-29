@@ -150,7 +150,7 @@ padding:0.5rem 0;
 #contact .contact-form label{
   display:block;
 }
-#contact .contact-form #Nume,#contact .contact-form #Email,#contact .contact-form #text{
+#contact .contact-form #name,#contact .contact-form #email,#contact .contact-form #text{
   width:100%;
   padding:0.5rem;
   margin:.2rem 0;
@@ -207,6 +207,6 @@ footer .box2 p{
   position:sticky;
 }
 .copyright .easter-egg{
-  color:black;
+  color:#111;
   cursor:default;
 }
