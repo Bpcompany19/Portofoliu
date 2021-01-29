@@ -1,0 +1,212 @@
+:root{
+  --primary-color:#C71515;
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+a {
+  text-decoration: none;
+}
+body{
+  line-height: 1.3;
+  font-family: 'Oswald', sans-serif;
+}
+/* Utilitati */
+.btn-light{
+  width:20%;
+  background:rgba(199, 21, 21,0.9);
+  color:lightgray;
+  padding:0.3rem 0.2rem;
+  font-size:1.3rem;
+  border-radius:10px;
+  border:2px solid #C71515;
+  transition:all 0.5s ease-in-out;
+  margin:auto;
+}
+.btn-light:hover{
+  background:rgba(199, 21, 21,0);
+  color:#333;
+}
+
+.btn{
+  background:rgba(199, 21, 21,0.9);
+  color:lightgray;
+  padding:0.2rem 0.6rem;
+  font-size:1.3rem;
+  border-radius:10px;
+  border:2px solid #C71515;
+  transition:all 0.5s ease-in-out;
+  
+}
+.btn:hover{
+  background:rgba(199, 21, 21,0);
+
+}
+.l-heading{
+  font-size:4rem;
+}
+
+.m-heading{
+  font-size:2rem;
+}
+.s-heading{
+  font-size: 1.5rem;
+}
+
+.red-text{
+  color:var(--primary-color);
+}
+
+.gray-text{
+  color:rgb(211, 205, 205);
+}
+
+.white-text{
+color:white;
+}
+
+h1,h2,h3,h4,h5,h6:hover{
+  cursor:default;
+}
+.active{
+  color:var(--primary-color);
+}
+/* gym */
+#navbar {
+  display:flex;
+  justify-content: space-evenly;
+  gap:10rem;
+  background: rgba(0,0,0,0);
+  /* position:absolute;
+  top:0;
+  right:0;
+  left:0; */
+  border-top:4px solid rgba(199, 21, 21,0.6);
+  position:sticky;
+}
+#navbar ul {
+  display:flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+
+  
+ 
+}
+#navbar ul li{
+  padding:1rem;
+}
+#navbar ul li a{
+  color:white;
+  font-size:1.3rem;
+  font-weight: 500 ;
+  transition: all 0.4s ease-in-out;
+}
+#navbar ul li a:hover{
+  color:var(--primary-color);
+}
+#navbar .logo{
+padding:0.5rem 0;
+}
+
+#navbar .logo img{
+  width:100px;
+  height:100px;
+  padding:0.4rem;
+  opacity:0.8;
+}
+#navbar .logo img:hover{
+   opacity:100%;
+}
+/* header */
+#header{
+  background:url("./gym-image/showcase.jpg") no-repeat center/cover;
+  height:40vh;
+}
+#header h1{
+
+  text-align: center;
+}
+/* contact */
+#contact{
+  background:rgb(211, 205, 205);
+  font-size:1.2rem;
+}
+
+#contact .contact-form{
+  height:50vh;
+  width:800px;
+  padding:2rem;
+  margin:auto;
+  background:rgb(211, 205, 205);
+  display:flex;
+  flex-direction: column;
+}
+#contact .contact-form .form-grup{
+  padding:0.5rem;
+}
+#contact .contact-form label{
+  display:block;
+}
+#contact .contact-form #Nume,#contact .contact-form #Email,#contact .contact-form #text{
+  width:100%;
+  padding:0.5rem;
+  margin:.2rem 0;
+  border-radius: 10px;
+  border-radius: 6px;
+  border:1px solid #333;
+
+}
+#contact .contact-form textarea{
+  width:100%;
+  height:3rem;
+  margin:.2rem 0;
+  border-radius: 6px;
+  border:1px solid #333;
+}
+
+/* footer */
+
+footer{
+  background:#111;
+  display:flex;
+  justify-content: space-evenly;
+  padding-bottom:4rem;
+  padding-top:2rem;
+  
+}
+
+footer .box1 h2, footer .box2 h2{
+   color:lightgray;
+   text-align:center;
+}
+
+footer  p{
+  padding:0.5rem;
+}
+footer .box2 p{
+  text-align:center;
+}
+.copyright{
+  color:white;
+  background:#111;
+  padding:0.2rem .5rem;
+  text-align:center;
+  bottom:0;
+  display:flex;
+  justify-content: space-between;
+}
+
+.copyright img{
+  width:25px;
+  height:25px;
+  border:2px solid var(--primary-color);
+  padding:0.2rem;
+  position:sticky;
+}
+.copyright .easter-egg{
+  color:black;
+  cursor:default;
+}

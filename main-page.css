@@ -25,6 +25,9 @@ body {
 .secondary-text {
     color:#4b95d6;
 }
+.dark-text{
+    color:#111;
+}
 
 .btn-primary {
     background: #4b95d6;
@@ -36,7 +39,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.btn-primary:hover, .btn-edette:hover {
+.btn-primary:hover, .btn-edette:hover, .btn-gym:hover{
     background: #2b75c6;
     color: white;
 }
@@ -48,6 +51,15 @@ body {
     padding: 0.80rem;
     border-radius: 10px;
     color: #cc9863;
+    transition: all 0.3s ease-in-out;
+    border: #333 2px solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn-gym{
+    background: rgba(199, 21, 21,0.9);
+    padding: 0.80rem;
+    border-radius: 10px;
+    color:lightgray;
     transition: all 0.3s ease-in-out;
     border: #333 2px solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

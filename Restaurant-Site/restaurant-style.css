@@ -313,3 +313,9 @@ p{margin:0.75rem 0;}
     display: inline;
   }
 }
+@media (min-width:769px) and (max-width:900px)
+{
+  #dates .container .box p{
+    font-size:0.9rem;
+  }
+}
