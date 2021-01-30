@@ -224,6 +224,8 @@ footer .box2 p{
   #navbar{
     gap:0rem;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align:center;
   }
   #navbar ul li{
