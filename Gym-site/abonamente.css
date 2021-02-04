@@ -138,7 +138,7 @@ padding:0.5rem 0;
   padding:4rem 2.5rem;
   border-radius:20px;
   text-align: center;
-  max-width:70%;
+  max-width:90%;
 
 }
 #abonamente .abonamente-container .a-box:hover{
@@ -166,6 +166,7 @@ padding:0.5rem 0;
   align-items: center;
   margin:auto;
   gap:2.5rem;
+  padding-left:0.5rem;
 }
 
 #abonamente-speciale .a-s-container .a-box{
@@ -173,7 +174,7 @@ padding:0.5rem 0;
   border-radius:20px;
   text-align: center;
   background:white;
-  max-width:70%;
+  max-width:90%;
 }
 #abonamente-speciale .a-s-container .a-box:hover{
 margin-bottom: 2rem;
