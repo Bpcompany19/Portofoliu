@@ -260,6 +260,7 @@ footer .box2 p{
      padding:0;
    }
     }
+   
     @media(max-width:526px){
       #contact .contact-form{
         width:300px;
@@ -269,6 +270,12 @@ footer .box2 p{
         width:40%;
       }
     }
+    @media (max-width:400px){
+      .easter-egg{
+        display:none;
+      }
+     }
+     
     @media (max-width:380px)
 {
   #navbar ul{
@@ -303,9 +310,7 @@ footer .box2 p{
   #header{
     height:50vh;
   }
-  .easter-egg{
-    display:none;
-}
+ 
 }
 @media (max-width:320px)
 {

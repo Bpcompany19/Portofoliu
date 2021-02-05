@@ -247,6 +247,7 @@ footer .box2 p{
   #abonamente .abonamente-container .a-box{
     padding:0.5rem;
     margin-right: 0.5rem;
+    margin-top:0.5rem;
     
     
   }
@@ -332,6 +333,13 @@ footer .box2 p{
     padding-top:0.2rem;
   }
 }
+
+  @media (max-width:400px){
+  .easter-egg{
+    display:none;
+  }
+ }
+
 @media (max-width:380px)
 {
   #navbar ul{
@@ -369,8 +377,18 @@ footer .box2 p{
   #header h1{
     margin-top:0.9rem;
   }
-  .easter-egg{
-    display:none;
+  #navbar ul li{
+    padding:0.4rem;
   }
+  footer{
+    flex-direction: column;
+    text-align: center;
+    gap:1rem;
+    padding-bottom: 2rem;;
+  }
+  footer .box1{
+    margin-bottom:1rem;
+  }
+  
 }
 

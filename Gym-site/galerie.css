@@ -258,6 +258,11 @@ footer .box2 p{
     height:300px;
   }
  }
+ @media (max-width:400px){
+  .easter-egg{
+    display:none;
+  }
+ }
  @media (max-width:380px)
 {
   #navbar ul{
@@ -292,9 +297,7 @@ footer .box2 p{
   #header{
     height:50vh;
   }
-  .easter-egg{
-    display:none;
-}
+ 
 }
 @media(max-width:340px)
 {
