@@ -210,6 +210,11 @@ footer .box2 p{
   color:#111;
   cursor:default;
 }
+ @media(max-width:1200px){
+  .l-heading{
+    font-size:3rem;
+  }
+ }
 @media (min-width:550px) and (max-width:670px) {
   #navbar{
     gap:1rem;
@@ -324,4 +329,65 @@ footer .box2 p{
     }
   }
 }
+@media(max-height:800px)
+{
+  #header{
+    height:40vh;
+  }
   
+}
+@media(max-height:700px)
+{
+  #header{
+    height:70vh;
+  }
+  #contact{
+    height:60vh;
+  }
+}
+@media(max-height:510px)
+{
+  #header{
+    height:80vh;
+  }
+  #contact{
+    height:70vh;
+  }
+}
+@media(max-height:425px)
+{
+  #header{
+    height:50vh;
+  }
+  #contact{
+    height:80vh;
+  }
+}
+@media(max-height:400px)
+{
+  #header{
+    height:100vh;
+  }
+  .l-heading{
+    font-size: 1.9rem;
+  }
+  #contact{
+    height:90vh;
+  }
+}
+@media(max-height:340px)
+{
+  #header{
+    height:110vh;
+  }
+  #navbar {
+    flex-direction: row;
+  }
+  #header h1{
+    margin-top:3rem;
+  }
+  #contact{
+    height:100vh;
+  }
+  
+}
