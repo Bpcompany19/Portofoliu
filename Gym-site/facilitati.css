@@ -258,6 +258,9 @@ footer .box2 p{
   .easter-egg{
     display:none;
   }
+  #despre{
+    padding:1.5rem 2rem;
+  }
  }
 @media (max-width:375px)
 {

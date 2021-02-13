@@ -116,18 +116,26 @@ padding:0.5rem 0;
 }
 
 /* galerie */
+#galerie-section{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 #galerie{
   display:grid;
   gap:1rem;
   grid-template-columns: 1fr 1fr 1fr;
-  /* margin-top:7rem; */
   background:lightgray;
   padding:2rem;
   padding-left:3rem;
+  align-self: center;
+  width:100%;
+  text-align: center;
+  justify-content: space-evenly;
 }
 
 #galerie img{
-  width:400px;
+  width:500px;
   height:400px;
   border-radius: 10px;
 }

@@ -283,9 +283,14 @@ footer .box2 p{
       justify-content: center;
       align-items: center;
       padding-top:0.75rem;
+      height:auto;
+      margin-bottom:2rem;
     }
     #abonamente-speciale .a-s-container .a-box{
       padding:0.5rem;
+    }
+    #abonamente-speciale .a-s-container p{
+      margin-top:2rem;
     }
 }
 @media (max-width:670px) {
@@ -298,6 +303,7 @@ footer .box2 p{
 {
   #abonamente .abonamente-container{
     height:auto;
+    
   }
   
 }
@@ -305,7 +311,7 @@ footer .box2 p{
 {
   #abonamente .abonamente-container{
     height:auto;
-    padding-bottom:0.5rem;
+    padding-bottom: 1.5rem;
   }
   #abonamente-speciale .a-s-container{
     height:auto;
