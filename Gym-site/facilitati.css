@@ -172,6 +172,12 @@ padding:0.5rem 0;
 }
 
 /* footer */
+footer img{
+  width:25px;
+  height:25px;
+  display:inline-block;
+  padding-top:0.2rem;
+}
 footer{
   background:#111;
   display:flex;
@@ -188,6 +194,9 @@ footer .box1 h2, footer .box2 h2{
 
 footer  p{
   padding:0.5rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 footer .box2 p{
   text-align:center;
