@@ -158,19 +158,18 @@ padding:0.5rem 0;
 }
 
 #abonamente-speciale .a-s-container{
-  width:100vw;
-  height:500px;
+  height:300px;
   display:grid;
   grid-template-columns: repeat(3,1fr);
   justify-content: center ;
   align-items: center;
-  margin:auto;
   gap:2.5rem;
   padding-left:0.5rem;
+  width:auto;
 }
 
 #abonamente-speciale .a-s-container .a-box{
-  padding:4rem 2.5rem;
+  padding:1rem 1rem;
   border-radius:20px;
   text-align: center;
   background:white;
@@ -255,8 +254,8 @@ footer .box2 p{
   }
   #abonamente .abonamente-container .a-box{
     padding:0.5rem;
-    margin-right: 0.5rem;
-    margin-top:0.5rem;
+    /* margin-right: 0.5rem;
+    /* margin-top:0.5rem; */ 
     
     
   }
