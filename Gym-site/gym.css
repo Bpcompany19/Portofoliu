@@ -385,3 +385,19 @@ footer .box1{
   margin-bottom:1rem;
 }
 }
+
+@media(max-height:525px){
+  #header{
+    height:auto;
+  }
+  #showcase h1, #showcase h2, #showcase h3{
+    font-size: 38px;
+  }
+}
+@media(max-height:280px)
+  {
+    #header{
+      height:160vh;
+    }
+  }
+ 

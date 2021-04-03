@@ -219,7 +219,7 @@ footer .box2 p{
   color:#111;
   cursor:default;
 }
- @media(max-width:1200px){
+@media(max-width:1200px){
   .l-heading{
     font-size:3rem;
   }
@@ -328,7 +328,7 @@ footer .box2 p{
 }
 @media (max-width:320px)
 {
-  @media(max-width:526px){
+  /* @media(max-width:526px){ */
     #contact .contact-form{
       width:240px;
       padding:0;
@@ -336,7 +336,7 @@ footer .box2 p{
     .btn-light{
       width:30%;
     }
-  }
+  /* } */
 }
 @media(max-height:800px)
 {
@@ -351,7 +351,8 @@ footer .box2 p{
     height:70vh;
   }
   #contact{
-    height:60vh;
+    height:auto;
+    padding-bottom:2rem;
   }
 }
 @media(max-height:510px)
@@ -360,7 +361,7 @@ footer .box2 p{
     height:80vh;
   }
   #contact{
-    height:70vh;
+    height:auto;
   }
 }
 @media(max-height:425px)
@@ -369,7 +370,7 @@ footer .box2 p{
     height:50vh;
   }
   #contact{
-    height:80vh;
+    height:90vh;
   }
 }
 @media(max-height:400px)
@@ -381,7 +382,7 @@ footer .box2 p{
     font-size: 1.9rem;
   }
   #contact{
-    height:90vh;
+    height:100vh;
   }
 }
 @media(max-height:340px)
@@ -396,7 +397,13 @@ footer .box2 p{
     margin-top:3rem;
   }
   #contact{
-    height:auto;
+    height:100vh;
   }
   
+}
+@media(max-height:280px)
+{
+  #contact{
+    height:120vh;
+  }
 }
