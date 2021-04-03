@@ -39,7 +39,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.btn-primary:hover, .btn-edette:hover, .btn-gym:hover{
+.btn-primary:hover, .btn-edette:hover, .btn-gym:hover, .btn-bpbuilders:hover{
     background: #2b75c6;
     color: white;
 }
@@ -60,6 +60,15 @@ body {
     padding: 0.80rem;
     border-radius: 10px;
     color:lightgray;
+    transition: all 0.3s ease-in-out;
+    border: #333 2px solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn-bpbuilders{
+    background: #ffd500;
+    padding: 0.80rem;
+    border-radius: 10px;
+    color:#111;
     transition: all 0.3s ease-in-out;
     border: #333 2px solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

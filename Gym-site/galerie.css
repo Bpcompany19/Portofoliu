@@ -132,6 +132,7 @@ padding:0.5rem 0;
   width:100%;
   text-align: center;
   justify-content: space-evenly;
+  margin:auto;
 }
 
 #galerie img{
@@ -381,4 +382,11 @@ footer .box2 p{
     margin-top:3rem;
   }
   
+}
+@media(max-width:1584px) and (min-width:1300px){
+
+  #galerie img{
+    width:90%;
+  }
+
 }
