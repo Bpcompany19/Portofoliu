@@ -6,6 +6,9 @@
   margin:0;
   padding:0;
 }
+html{
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -355,13 +358,13 @@ footer .box2 p{
     padding-bottom:2rem;
   }
 }
-@media(max-height:510px)
+@media(max-height:540px)
 {
   #header{
     height:80vh;
   }
   #contact{
-    height:auto;
+    height:70vh;
   }
 }
 @media(max-height:425px)
@@ -370,7 +373,7 @@ footer .box2 p{
     height:50vh;
   }
   #contact{
-    height:90vh;
+    height:80vh;
   }
 }
 @media(max-height:400px)
@@ -401,9 +404,27 @@ footer .box2 p{
   }
   
 }
+@media(max-height:320px)
+{
+  #contact{
+    height:120vh;
+  }
+}
 @media(max-height:280px)
 {
   #contact{
     height:120vh;
+  }
+}
+@media(max-height:250px)
+{
+  #contact{
+    height:170vh;
+  }
+}
+@media(max-height:180px)
+{
+  #contact{
+    height:190vh;
   }
 }
