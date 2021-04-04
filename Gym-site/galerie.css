@@ -390,6 +390,162 @@ footer .box2 p{
 
   #galerie img{
     width:90%;
-  }
-
+    height:90%;
+  }  
 }
+
+
+/* nou */
+#body{
+  display:flex;
+}
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  align-self: center;
+  margin: auto;
+}
+.flex img{
+  width:500px;
+  height:400px;
+  margin:5px;
+}
+.flex img:hover{
+  cursor: pointer;
+  opacity:0.9;
+}
+#lightbox{
+  position:fixed;
+  z-index: 100;
+  top:0;
+  height:100vh;
+  width:100vw;
+  background-color: rgba(0,0 ,0 ,0.8 );
+  display:none;
+  align-self: center;
+}
+#lightbox.activ{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  animation-name: animation1;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  transition: all 0.3s ease;
+  padding: 0;
+  margin: 0;
+}
+
+#lightbox img{
+  border:2px white solid;
+  width:600px;
+  height:500px;
+  margin:0;
+}
+
+@media(max-width:1500px)
+{
+  .flex img{
+      width:450px;
+      height:400px;
+  }
+}
+@media(max-width:1400px)
+{
+  .flex img{
+      width:400px;
+      height:350px;
+  }
+}
+@media(max-width:1300px)
+{
+  .flex img{
+      width:350px;
+      height:300px;
+  }
+}
+@media(max-width:1090px)
+{
+  .flex img{
+      width:450px;
+      height:400px;
+  }
+}
+@media(max-width:960px)
+{
+  .flex img{
+      width:360px;
+      height:300px;
+  }
+}
+@media(max-width:790px)
+{
+  .flex img{
+      width:300px;
+      height:250px;
+  }
+  #lightbox img{
+      width:400px;
+      height:350px;
+  }
+}
+@media(max-width:640px)
+{
+  .flex img{
+      width:300px;
+      height:250px;
+  }
+  #lightbox img{
+      width:500px;
+      height:400px;
+  }
+}
+@media(max-width:636px)
+{
+  .flex img{
+      width:400px;
+      height:350px;
+  }
+  #lightbox img{
+      width:400px;
+      height:300px;
+  }
+}
+@media(max-width:490px)
+{
+  .flex img{
+      width:350px;
+      height:300px;
+  }
+  #lightbox img{
+      width:380px;
+      height:300px;
+  }
+}
+@media(max-width:443px)
+{
+  .flex img{
+      width:350px;
+      height:300px;
+  }
+  #lightbox img{
+      width:250px;
+      height:300px;
+  }
+}
+@media(max-width:400px)
+{
+  .flex img{
+      width:260px;
+      height:200px;
+  }
+}
+
+
+
+
+
+
