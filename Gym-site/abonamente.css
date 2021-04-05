@@ -243,7 +243,7 @@ footer .box2 p{
   cursor:default;
 }
 
-@media (max-width:1200px)
+@media (max-width:1300px)
 {
   
   #abonamente .abonamente-container{
@@ -253,11 +253,13 @@ footer .box2 p{
     justify-content: center;
     align-items: center;
     padding-top:0.75rem;
+    height:60vh
     
     
   }
   #abonamente .abonamente-container .a-box{
     padding:0.5rem;
+
     /* margin-right: 0.5rem;
     /* margin-top:0.5rem; */ 
     
@@ -309,12 +311,22 @@ footer .box2 p{
   #navbar{
     gap:1rem;
   }
+  #abonamente .abonamente-container{
+    height:60vh;
   
+}
+@media (max-width:630px) {
+  #navbar{
+    gap:1rem;
+  }
+  #abonamente .abonamente-container{
+    height:120vh;
+  }
 }
 @media (max-width:580px)
 {
   #abonamente .abonamente-container{
-    height:auto;
+    height:115vh;
     
   }
   
@@ -455,4 +467,4 @@ footer .box2 p{
     margin-top:3rem;
   }
   
-}
+}}
