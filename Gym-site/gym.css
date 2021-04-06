@@ -17,6 +17,21 @@ body{
   font-family: 'Oswald', sans-serif;
 }
 /* Utilitati */
+.btn-light{
+  width:20%;
+  background:rgba(199, 21, 21,0.9);
+  color:lightgray;
+  padding:0.3rem 0.2rem;
+  font-size:1.3rem;
+  border-radius:10px;
+  border:2px solid #C71515;
+  transition:all 0.5s ease-in-out;
+  margin:auto;
+}
+.btn-light:hover{
+  background:rgba(199, 21, 21,0);
+  color:#333;
+}
 .btn{
   background:rgba(199, 21, 21,0.9);
   color:lightgray;
@@ -26,6 +41,9 @@ body{
   border:2px solid #C71515;
   transition:all 0.5s ease-in-out;
   
+}
+.active{
+  color:var(--primary-color);
 }
 .btn:hover{
   background:rgba(199, 21, 21,0);
@@ -173,6 +191,18 @@ text-align:center;
   }
   
 }
+
+/* header 1 */
+
+#header1{
+  background:url("./gym-image/showcase.jpg") no-repeat center/cover;
+  height:40vh;
+}
+#header1 h1{
+
+  text-align: center;
+  font-size:2.5rem;
+}
 /* info */
 #info{
   margin-top:7rem;
@@ -279,33 +309,36 @@ justify-content: space-between;
   height:25px;
   border:2px solid var(--primary-color);
   padding:0.2rem;
-  position:sticky;
-}
-.copyright .easter-egg{
-  color:#111;
-  cursor:default;
 }
 
-@media (min-width:550px) and (max-width:670px) {
+
+/* media for gym */
+
+@media(max-width:745px)
+{
+   #info{
+     display:block;
+   }
+   #info .info-img{
+     height:50vh;
+   }
+}
+
+
+@media  (max-width:670px) {
   #navbar{
     gap:1rem;
   }
-  #info{
-    display:block;
-  }
-  #info .info-img{
-    height:400px;
-  }
   #abonare{
+    display:flex;
     justify-content: center;
-    padding:0.2rem;
+    align-items: center;
   }
   #abonare .abonare-text{
-    color:rgb(211, 205, 205);
-    text-align:center;
-    padding:0.2rem;
-    line-height:1.5;
+    margin:0;
+    padding:0;
   }
+  
  
 }
 @media (max-width:549px) {
@@ -322,29 +355,21 @@ justify-content: space-between;
   #navbar .logo{
     padding-top:0.2rem;
   }
-  #info{
-    display:block;
+  #showcase h1, #showcase h2{
+    font-size:2.5rem;
   }
-  #info .info-img{
-    height:400px;
+  #showcase{
+    height:80vh;
   }
-  #abonare{
-    justify-content: center;
-    padding:0.2rem;
-  }
-  #abonare .abonare-text{
-    color:rgb(211, 205, 205);
-    text-align:center;
-    padding:0.2rem;
-    line-height:1.5;
-  }
+   #header{
+     height:80vh;
+   }
+   #abonare p{
+     font-size:1.75rem;
+   }
 }
-@media (max-width:400px){
-  .easter-egg{
-    display:none;
-  }
- }
-@media (max-width:380px)
+
+@media (max-width:388px)
 {
   #navbar ul{
     flex-direction: column;
@@ -353,54 +378,47 @@ justify-content: space-between;
   #navbar ul li{
     padding-bottom: 0.5rem;
   }
-  #showcase .showcase-text{
-    height:70vh;
-    font-size: 1rem;
-    }
-#showcase .showcase-text .bar{
-    margin:auto;
-    width:100%;
+  #header{
+    height:90vh;
+  }
+  #showcase{
+    height:60vh;
   }
   footer{
-     text-align: center;
+    display:block;
   }
-  .l-heading{
-    font-size:3rem;
+  .copyright .easter-egg{
+    display:none;
+  }
+  #showcase h1,#showcase h2{
+    font-size:2.2rem;
+  }
+  #header1{
+    height:50vh;
   }
   
-  .m-heading{
-    font-size:1.5rem;
-  }
-  .copyright{
-    justify-content: center;
-    gap:0.6rem;
-  }
-#navbar ul li{
-  padding:0.4rem;
-}
-footer{
-  flex-direction: column;
-  text-align: center;
-  gap:1rem;
-  padding-bottom: 2rem;;
-}
-footer .box1{
-  margin-bottom:1rem;
-}
 }
 
 @media(max-height:525px){
   #header{
     height:auto;
   }
-  #showcase h1, #showcase h2, #showcase h3{
-    font-size: 38px;
+}
+ 
+/* media for gym height */
+@media(max-height:630px){
+  #header{
+    height:110vh;
+  }
+  #header1{
+    height:65vh;
   }
 }
-@media(max-height:280px)
-  {
-    #header{
-      height:160vh;
-    }
+@media(max-height:354px){
+  #header{
+    height:140vh;
   }
- 
+  #header1{
+    height:120vh;
+  }
+}
