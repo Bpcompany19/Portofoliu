@@ -48,7 +48,6 @@
   flex-wrap: wrap;
   justify-content: center ;
   align-items: center;
-  gap:2.5rem;
   padding-left:0.5rem;
   width:auto;
 }
@@ -58,6 +57,7 @@
   border-radius:20px;
   text-align: center;
   background:white;
+  margin:1.5rem;
 }
 #abonamente-speciale .a-s-container .a-box:hover{
     opacity:0.8;
