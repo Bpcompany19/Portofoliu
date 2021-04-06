@@ -414,14 +414,14 @@ justify-content: space-between;
     height:110vh;
   }
   #header1{
-    height:65vh;
+    height:70vh;
   }
 }
-@media(max-height:354px){
+@media(max-height:486px){
   #header{
     height:140vh;
   }
   #header1{
-    height:120vh;
+    height:80vh;
   }
 }

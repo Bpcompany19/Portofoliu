@@ -130,9 +130,12 @@ body{
   
      
 }
-@media(max-height:500px){
+@media(max-height:552px){
   #lightbox.activ{
     display:none;
+  }
+  #header1{
+    height:70vh;
   }
 }
 

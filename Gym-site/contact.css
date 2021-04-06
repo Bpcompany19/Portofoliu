@@ -44,3 +44,23 @@
     width:40%;
   }
 }
+@media(max-height:665px){
+  #contact{
+    height:60vh;
+  }
+}
+@media(max-height:560px){
+  #contact{
+    height:70vh;
+  }
+}
+@media(max-height:475px){
+  #contact{
+    height:80vh;
+  }
+}
+@media(max-height:415px){
+  #contact{
+    height:100vh;
+  }
+}
