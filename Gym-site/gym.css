@@ -203,6 +203,9 @@ text-align:center;
   text-align: center;
   font-size:2.5rem;
 }
+#showcase-text{
+
+}
 /* info */
 #info{
   margin-top:7rem;
@@ -394,7 +397,7 @@ justify-content: space-between;
     font-size:2.2rem;
   }
   #header1{
-    height:50vh;
+    height:55vh;
   }
   
 }
