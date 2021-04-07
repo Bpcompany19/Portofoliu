@@ -8,6 +8,7 @@
 }
 html{
   scroll-behavior: smooth;
+  width:100%;
 }
 a {
   text-decoration: none;
@@ -42,8 +43,8 @@ body{
   transition:all 0.5s ease-in-out;
   
 }
-.active{
-  color:var(--primary-color);
+.constant{
+  color:#C71515;
 }
 .btn:hover{
   background:rgba(199, 21, 21,0);
@@ -95,9 +96,12 @@ h1,h2,h3,h4,h5,h6:hover{
   list-style: none;
   align-items: center;
   justify-content: center;
-
+  margin-top:1rem;
   
  
+}
+#navbar .links{
+  margin-top:0rem;
 }
 #navbar ul li{
   padding:1rem;
@@ -123,6 +127,22 @@ padding:0.5rem 0;
 }
 #navbar .logo img:hover{
    opacity:100%;
+}
+.toggle-btn{
+  position:absolute;
+  top:2rem;
+  right:1.2rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:30px;
+  height:21px;
+}
+.bar{
+  height:3px;
+  width:100%;
+  background:white;
+  border-radius: 10px;
 }
 /* header */
 #header{
@@ -202,9 +222,6 @@ text-align:center;
 
   text-align: center;
   font-size:2.5rem;
-}
-#showcase-text{
-
 }
 /* info */
 #info{
@@ -344,84 +361,74 @@ justify-content: space-between;
   
  
 }
-@media (max-width:549px) {
-  #navbar{
-    gap:0rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-  }
+@media(max-width:540px){
   #navbar ul li{
-    padding:0.2rem 0.80rem;
+    gap:0;
   }
-  #navbar .logo{
-    padding-top:0.2rem;
-  }
-  #showcase h1, #showcase h2{
-    font-size:2.5rem;
-  }
-  #showcase{
-    height:80vh;
-  }
-   #header{
-     height:80vh;
-   }
-   #abonare p{
-     font-size:1.75rem;
-   }
+}
+@media(max-width:530px){
+  .toggle-btn{
+    display:flex;
+}
+#navbar{
+  justify-content: space-between;
+  padding:0 1rem;
+  flex-direction: column;
+  align-items:center;
+  gap:0;
+}
+.links{
+  display:none;
+}
+.links.activ-ham{
+  display:flex;
+}
+#navbar ul{
+  flex-direction: column;
+ 
+}
+#navbar ul li{
+  padding:0.7rem;
+}
+#navbar .logo img{
+  padding:0.2rem;
+  width:130px;
+  height:130px;
+}
+#showcase{
+  height:50vh;
 }
 
-@media (max-width:388px)
+#showcase h1, #showcase h2{
+  font-size:2.5rem;
+}
+#header1{
+  height:auto;
+}
+}
+@media(max-width:388px)
 {
-  #navbar ul{
-    flex-direction: column;
-
-  }
-  #navbar ul li{
-    padding-bottom: 0.5rem;
-  }
-  #header{
-    height:90vh;
-  }
-  #showcase{
-    height:60vh;
-  }
   footer{
     display:block;
   }
-  .copyright .easter-egg{
-    display:none;
-  }
-  #showcase h1,#showcase h2{
-    font-size:2.2rem;
-  }
-  #header1{
-    height:55vh;
-  }
-  
 }
 
-@media(max-height:525px){
-  #header{
-    height:auto;
+/* height */
+@media(max-height:505px){
+  #header1{
+    height:60vh;
   }
 }
- 
-/* media for gym height */
-@media(max-height:630px){
-  #header{
-    height:110vh;
-  }
+@media(max-height:369px){
   #header1{
     height:70vh;
   }
-}
-@media(max-height:486px){
   #header{
-    height:140vh;
+    height:120vh;
   }
-  #header1{
+}
+@media(max-height:317px){
+#header1{
     height:80vh;
   }
 }

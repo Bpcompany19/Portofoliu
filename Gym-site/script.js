@@ -19,3 +19,11 @@ lightbox.addEventListener('click', e =>{
     if(e.target !== e.currentTarget) return
     lightbox.classList.remove('activ')
 })
+
+//  script for hamburger
+
+const togglebutton = document.getElementsByClassName('toggle-btn') [0]
+const links = document.getElementsByClassName('links') [0]
+togglebutton.addEventListener('click', () => {
+    links.classList.toggle('activ-ham')
+})

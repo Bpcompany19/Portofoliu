@@ -62,5 +62,11 @@
 @media(max-height:415px){
   #contact{
     height:100vh;
+    padding-bottom:5rem;
+  }
+}
+@media(max-height:338px){
+  #contact{
+    height:125vh;
   }
 }
