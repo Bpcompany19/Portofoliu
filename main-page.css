@@ -27,6 +27,7 @@ body {
 }
 .dark-text{
     color:#111;
+    display:inline;
 }
 
 .btn-primary {
@@ -39,22 +40,11 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.btn-primary:hover, .btn-edette:hover, .btn-gym:hover, .btn-bpbuilders:hover{
-    background: #2b75c6;
-    color: white;
-}
+
 
 /* Sites Buttons */
 
-.btn-edette {
-    background: #56391c;
-    padding: 0.80rem;
-    border-radius: 10px;
-    color: #cc9863;
-    transition: all 0.3s ease-in-out;
-    border: #333 2px solid;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 .btn-gym{
     background: rgba(199, 21, 21,0.9);
     padding: 0.80rem;
@@ -64,15 +54,273 @@ body {
     border: #333 2px solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.btn-bpbuilders{
-    background: #ffd500;
-    padding: 0.80rem;
-    border-radius: 10px;
-    color:#111;
-    transition: all 0.3s ease-in-out;
-    border: #333 2px solid;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ .button{
+     padding:0.75rem 1.5rem;
+     text-decoration: none;
+     text-transform: uppercase;
+     transition:0.7s all;
+     background:rgba(227,150,81,0.8);
+     color:rgba(0, 0, 0,0.8);
+     position:relative;
+     display:inline-block;
+ }
+ .button:hover{
+    color:#333;
+    background:rgba(227,150,81,1);
 }
+.button span{
+    display:block;
+    position:absolute;
+    background:#66391c;
+
+}
+.button span:nth-child(1){
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:2px;
+    height:100%;
+    transform:scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.button:hover span:nth-child(1) {
+    transform:scaleY(1);
+    transform-origin: bottom;
+    transition:transform 0.5s;
+}
+.button span:nth-child(2){
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px;
+    transform:scaleY(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.button:hover span:nth-child(2) {
+    transform:scaleY(1);
+    transform-origin: left;
+    transition:transform 0.5s;
+}
+.button span:nth-child(3){
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:2px;
+    height:100%;
+    transform:scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.button:hover span:nth-child(3) {
+    transform:scaleY(1);
+    transform-origin: bottom;
+    transition:transform 0.5s;
+    transition-delay: 0.5s;
+}
+.button span:nth-child(4){
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:2px;
+    transform:scaleY(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.button:hover span:nth-child(4) {
+    transform:scaleY(1);
+    transform-origin: left;
+    transition:transform 0.5s;
+    transition-delay: 0.5s;
+}
+/* btn-red */
+ .button-red{
+     padding:0.75rem 1.5rem;
+     text-decoration: none;
+     text-transform: uppercase;
+     transition:0.5s all;
+     background:rgba(199, 21, 21,0.8);;
+     color:#f4f4f4;
+     position:relative;
+     display:inline-block;
+ }
+ .button-red:hover{
+    color:#f4f4f4;
+    background:rgba(199, 21, 21,0.9);;
+}
+.button-red span{
+    display:block;
+    position:absolute;
+    background:#333;
+
+}
+.button-red span:nth-child(1){
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:2px;
+    height:100%;
+    transform:scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.button-red span:nth-child(1){
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:2px;
+    height:100%;
+    transform:scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.button-red:hover span:nth-child(1) {
+    transform:scaleY(1);
+    transform-origin: bottom;
+    transition:transform 0.5s;
+}
+.button-red span:nth-child(2){
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px;
+    transform:scaleY(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.button-red:hover span:nth-child(2) {
+    transform:scaleY(1);
+    transform-origin: left;
+    transition:transform 0.5s;
+}
+.button-red span:nth-child(3){
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:2px;
+    height:100%;
+    transform:scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.button-red:hover span:nth-child(3) {
+    transform:scaleY(1);
+    transform-origin: bottom;
+    transition:transform 0.5s;
+    transition-delay: 0.5s;
+}
+.button-red span:nth-child(4){
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:2px;
+    transform:scaleY(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.button-red:hover span:nth-child(4) {
+    transform:scaleY(1);
+    transform-origin: left;
+    transition:transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+/* btn-yellow */
+ .button-yellow{
+     padding:0.75rem 1.5rem;
+     text-decoration: none;
+     text-transform: uppercase;
+     transition:0.5s all;
+     background:rgba(255,213,0,0.8);
+     color:rgba(0, 0, 0,0.8);
+     position:relative;
+     display:inline-block;
+ }
+ .button-yellow:hover{
+    color:#333;
+    background:rgba(255,213,0,0.9);
+}
+.button-yellow span{
+    display:block;
+    position:absolute;
+    background:#333;
+
+}
+.button-yellow span:nth-child(1){
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:2px;
+    height:100%;
+    transform:scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.button-yellow:hover span:nth-child(1) {
+    transform:scaleY(1);
+    transform-origin: bottom;
+    transition:transform 0.5s;
+}
+.button-yellow span:nth-child(2){
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px;
+    transform:scaleY(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.button-yellow:hover span:nth-child(2) {
+    transform:scaleY(1);
+    transform-origin: left;
+    transition:transform 0.5s;
+}
+.button-yellow span:nth-child(3){
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:2px;
+    height:100%;
+    transform:scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.button-yellow:hover span:nth-child(3) {
+    transform:scaleY(1);
+    transform-origin: bottom;
+    transition:transform 0.5s;
+    transition-delay: 0.5s;
+}
+.button-yellow span:nth-child(4){
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:2px;
+    transform:scaleY(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.button-yellow:hover span:nth-child(4) {
+    transform:scaleY(1);
+    transform-origin: left;
+    transition:transform 0.5s;
+    transition-delay: 0.5s;
+}
+
 /* Header */
 
 header {

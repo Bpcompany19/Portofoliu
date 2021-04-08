@@ -111,18 +111,40 @@ p{margin:0.75rem 0;}
   align-items: center;
   list-style:none;
 }
+#navbar ul li{
+  margin-right:1rem;
+
+}
 #navbar ul li a{
   color:var(--secondary-color);
-  padding:0.75rem;
+  padding:0.5rem;
+  transition:all ease-in-out 0.4s;
+  border-radius: 5px;
 }
 #navbar ul li a:hover{
-  opacity:0.7;
+  background:#cc9863;
+  color: var(--primary-color)
 }
 #navbar h1 span{
   margin:0 0.3rem;
   cursor: default;
 }
 
+#navbar .toggle-btn{
+     width:24px;
+     height:18px;
+     display:none;
+     flex-direction: column;
+     justify-content: space-between;
+     position:absolute;
+     top:1rem;
+     right:2rem;
+}
+.toggle-btn .bars{
+  width:100%;
+  height:2px;
+  background:var(--secondary-color);
+}
 
 /* showcase */
 #showcase{
@@ -318,4 +340,43 @@ p{margin:0.75rem 0;}
   #dates .container .box p{
     font-size:0.9rem;
   }
+}
+@media(max-width:550px){
+  #navbar .toggle-btn{
+    display:flex;
+  }
+  /* navbar */
+
+#navbar{
+  flex-direction: column;
+  position: absolute;
+  width:100%;
+  padding:0.5rem 0;
+
+}
+.link{
+  display:block;
+}
+.link .active{
+  display:auto;
+}
+
+#navbar ul{
+  flex-direction: column;
+  padding-top:0.5rem;
+}
+#navbar ul li{
+  padding:0.3rem;
+  width:100%;
+  text-align:center;
+  margin-top:0.5rem;
+  margin-right:0;
+}
+#navbar ul li a{
+  width:100%;
+  display:inline-block;
+}
+#navbar ul li:last-child {
+border:none;
+}
 }

@@ -388,7 +388,7 @@ justify-content: space-between;
  
 }
 #navbar ul li{
-  padding:0.7rem;
+  padding:0.5rem;
 }
 #navbar .logo img{
   padding:0.2rem;
@@ -414,9 +414,12 @@ justify-content: space-between;
 }
 
 /* height */
-@media(max-height:505px){
+@media(max-height:569px){
   #header1{
     height:60vh;
+  }
+  #header{
+    height:110vh;
   }
 }
 @media(max-height:369px){

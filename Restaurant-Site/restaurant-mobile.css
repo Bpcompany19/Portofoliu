@@ -1,24 +1,4 @@
-/* navbar */
 
-#navbar{
-  flex-direction: column;
-  position: absolute;
-  width:100%;
-  padding-bottom:0.5rem;
-}
-#navbar ul{
-  flex-direction: column;
-  padding-top:0.5rem;
-}
-#navbar ul li{
-  padding:0.3rem;
-  border-bottom: 1px dotted #333 ;
-  width:100%;
-  text-align:center;
-}
-#navbar ul li:last-child {
-border:none;
-}
 
 /* showcase */
 
