@@ -1,3 +1,10 @@
+// hamburger
+  const togglebtn = document.getElementsByClassName('btn-toggle')[0];
+  const links = document.getElementsByClassName('navbar-li')[0];
+  togglebtn.addEventListener('click', () => {
+    links.classList.toggle('activ')
+  })
+// smooth scrolling
 
 $('#navbar a, .btn').on('click', function(event) {
   if (this.hash !== '') {
