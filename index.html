@@ -8,6 +8,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/ded88ae820.js" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 <title>BPC | Portofolio</title>
 </head>
 <body>
@@ -97,6 +101,21 @@
             </a>
         </div>
     </section>
-    
+    <script>
+        $('.btn').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      900
+    );
+  }
+});
+    </script>
 </body>
 </html>

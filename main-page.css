@@ -6,9 +6,6 @@
     --page-5-color:steelblue;
     --animate-speed:1.5s;
 } 
-html{
-    scroll-behavior:smooth;
-}
 
 body{
     font-family: Arial, Helvetica, sans-serif ;
