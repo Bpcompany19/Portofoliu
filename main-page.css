@@ -4,7 +4,7 @@
     --page-3-color:#730505;
     --page-4-color:#ffa500;
     --page-5-color:steelblue;
-    --animate-speed:1s;
+    --animate-speed:1.5s;
 } 
 html{
     scroll-behavior:smooth;
@@ -54,15 +54,7 @@ body{
     font-size:1.1rem;
     transition:all 0.3s ease-in;
 }
-#page-1 .btn{
-    animation: btn 1.5s ease-in forwards;
-    transform: scaleX(0);
-}
-@keyframes btn{
-    to{
-        transform:scaleX(1)
-    }
-}
+
 
 
 .btn:hover, .btn-dark{
@@ -75,10 +67,14 @@ body{
 }
 #page-1 img{
     margin-bottom:2rem;
-    animation:img 1.5s ease-in-out forwards;
+    animation:appear 1.5s ease-in-out forwards;
     transform:scale(0);
 }
-@keyframes img{
+#page-1 .btn, #page-1 .text{
+    animation:appear 1.5s ease-in-out forwards;
+    transform:scale(0);
+}
+@keyframes appear{
     to{
         transform: scale(1);
     }
@@ -86,31 +82,18 @@ body{
 }
 /* animations */
 #page-1 h1{
-    transform: translateY(-1200px);
-    animation: heading var(--animate-speed) forwards ease-in;
+    transform: scale(0);
+    animation: appear var(--animate-speed) forwards ease-in-out;
     font-family: 'New Tegomin', serif;
-}
-
-/* keyframe */
-@keyframes heading{
-    to{
-        transform:translateY(0);
-    }
-}
-#page-1 p, #page-1 .features{
-    transform: scaleY(0);
-    animation: text 0.4s forwards ease-in 2s;
-}
-@keyframes text{
-    to{
-        transform:scaleY(1);
-    }
 }
 .features{
     display:flex;
     justify-content: space-evenly;
-    width:60%;
-    margin-left:1.2rem;
+    align-items: center;
+    transform: scale(0);
+    animation: appear var(--animate-speed) forwards ease-in-out;
+    padding:1rem;
+    width:80%;
 }
 .features p{
    border-radius:50%;;
@@ -136,7 +119,7 @@ body{
     font-size:1.2rem;
 }
 .page .img{
-    width:80%;
+    width:80vw;
 }
 #page-2 .content a{
     text-decoration: none;
@@ -153,7 +136,7 @@ body{
     margin-top:1rem;
     color:#f4f4f4;
     border:1px dashed #f4f4f4;
-    padding:0.5rem; 
+    padding:0.4rem; 
     opacity:0.8;
 }
 #page-3 .content a:hover{
@@ -165,7 +148,7 @@ body{
     margin-top:1rem;
     color:#333;
     border:1px #333 dashed;
-    padding:0.5rem; 
+    padding:0.4rem; 
     opacity:0.9;
 }
 #page-4 .content a:hover{
@@ -232,3 +215,76 @@ body{
         cursor:pointer;
         color:#333;
   }
+
+  @media(max-width:793px){
+       #page-1 p{
+           font-size:0.9rem;
+       }
+       #page-1 h1{
+           font-size:2rem;
+       }
+       .features p{
+           margin-right:0.4rem;
+       }
+  }
+  @media(max-width:430px){
+    .features{
+        padding:0.4rem;
+    }
+      .features p{
+          border-radius:10px;
+          margin:0.3rem;
+      }
+      #page-1 .btn{
+          margin-top:10px;
+      }
+      #page-1 .text{
+          margin:0.2rem;
+      }
+      #page-1 img{
+          margin:0;
+      }
+  }
+  @media(max-width:400px) and (max-height:700px){
+    #page-1 img{
+        height:100px;
+    }
+    #page-1 h1{
+        font-size:1.5rem;
+  }
+   .features p{
+       height:35%;
+   }
+   #page-1 .btn{
+       margin:0;
+       padding:0.5rem;
+   }
+   .features{
+       padding:10px;
+       height:20vh;
+   }
+}
+
+@media(max-width:600px){
+    #page-2 .btn, #page-3 .btn, #page-4 .btn,#page-5 .btn,
+    #page-2 a, #page-3 a, #page-4 a{
+         padding: 0.4rem;
+         font-size: 1rem;
+    }
+    .page .img{
+        width:90vw;
+        
+    }
+}
+@media(max-width:450px)
+{ 
+    #page-5 h1{
+        font-size:2rem;
+    }
+    #page-5 .btn-contact{
+        width:40%;
+    }
+    #page-5 .contact-form, #page-5{
+        padding:1rem;
+    }
+}
