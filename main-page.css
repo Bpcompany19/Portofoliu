@@ -254,6 +254,9 @@ body{
       #page-1 img{
           margin:0;
       }
+      body{
+          overflow-y: scroll;
+      }
   }
   @media(max-width:400px) and (max-height:700px){
     #page-1 img{

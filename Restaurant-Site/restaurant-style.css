@@ -110,6 +110,7 @@ p{margin:0.75rem 0;}
   display:flex;
   align-items: center;
   list-style:none;
+
 }
 #navbar ul li{
   margin-right:1rem;
@@ -139,6 +140,7 @@ p{margin:0.75rem 0;}
      position:absolute;
      top:1rem;
      right:1.5rem;
+     z-index: 100;
 }
 #navbar .btn-toggle span{
   width:100%;
@@ -146,8 +148,10 @@ p{margin:0.75rem 0;}
   background:var(--secondary-color);
 }
 .navbar-li.activ{
-  display:block;
+  top:0;
+  
 }
+
 
 /* showcase */
 #showcase{
@@ -360,6 +364,7 @@ p{margin:0.75rem 0;}
 #navbar ul{
   flex-direction: column;
   padding-top:0.5rem;
+  margin-top:20px;
 }
 #navbar ul li{
   padding:0.3rem;
@@ -376,8 +381,15 @@ p{margin:0.75rem 0;}
 border:none;
 }
  .navbar-li{
-   display:none;
+   position:fixed;
+   top:-500px;
+   right:0;
+   left:0;
+   text-align:center;
+   background:var(--primary-color);
+   transition: top 0.7s ease-out;
  }
+ .navbar
  #showcase{
    height:120vh;
  }
