@@ -101,9 +101,9 @@ html{
     .links{
         position:absolute;
         top:58px;
-        right:-1000px;
+        left:-1000px;
         text-align: center;
-        transition:right 1s ease-out;
+        transition:left 1s ease-out;
         background:#006208;
         padding:0.5rem;
         height:auto;
@@ -130,7 +130,7 @@ html{
         color:white;
     }
      .activ{
-        right:0;
+        left:0;
     }
 }
     @media(max-width:743px)
