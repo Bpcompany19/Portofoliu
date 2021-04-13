@@ -3,7 +3,8 @@
     --page-2-color:#cc9863;
     --page-3-color:#730505;
     --page-4-color:#ffa500;
-    --page-5-color:#0f4385;
+    --page-5-color:#006208;
+    --page-6-color:#0f4385;
     --animate-speed:1.5s;
 } 
 
@@ -21,6 +22,7 @@ body{
       #page-3{background: var(--page-3-color);}
       #page-4{background: var(--page-4-color);}
       #page-5{background: var(--page-5-color);}
+      #page-6{background: var(--page-6-color);}
       
       
 .page{
@@ -164,14 +166,27 @@ body{
     border:1px solid;
     opacity:100%;
 }
-/* page 5 contact */
-#page-5{
+#page-5 .content a{
+    text-decoration: none;
+    margin-top:1rem;
+    color:#f4f4f4;
+    border:1px #f4f4f4 dashed;
+    padding:0.4rem; 
+    opacity:0.9;
+}
+#page-5 .content a:hover{
+    border:1px solid;
+    opacity:100%;
+}
+ 
+/* page 6 contact */
+#page-6{
     display:flex;
     flex-direction: column;
     margin:0;
     text-align:left
 }
-#page-5 .contact-form{
+#page-6 .contact-form{
     height:auto;
     width:70%;
     padding:0.5rem;
@@ -180,13 +195,13 @@ body{
     flex-direction: column;
     
   }
-  #page-5 .contact-form .form-grup{
+  #page-6 .contact-form .form-grup{
     padding:0.5rem;
   }
-  #page-5 .contact-form label{
+  #page-6 .contact-form label{
     display:inline-block;
   }
-  #page-5 .contact-form #name,#page-5 .contact-form #email,#page-5 .contact-form #text{
+  #page-6 .contact-form #name,#page-6 .contact-form #email,#page-6 .contact-form #text{
     width:100%;
     padding:0.5rem;
     margin:.2rem 0;
@@ -195,18 +210,19 @@ body{
     border:1px solid #333;
   
   }
-  #page-5 .contact-form textarea{
+  #page-6 .contact-form textarea{
     width:100%;
     height:3rem;
     margin:.2rem 0;
     border-radius: 6px;
     border:1px solid #333;
   }
-  #page-5 h1{
+  #page-6 h1{
     font-family: 'New Tegomin', serif;
     border-bottom: 2px solid #f4f4f4;
     color:#f4f4f4;
   }
+
   .btn-contact{
       padding:.6rem;
       display:inline-block;
