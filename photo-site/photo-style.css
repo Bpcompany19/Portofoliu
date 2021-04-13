@@ -424,10 +424,11 @@ html{
   }
   @media(max-width:520px){
     #poza-mare .scris{
-        margin-top:14rem;
+        margin-top:10rem;
     }
     #poza-mare{
         height:110vh;
+        padding:1rem;
     }
     .slideshow-container img{
         height:40vh;
