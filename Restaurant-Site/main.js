@@ -1,8 +1,12 @@
 // hamburger
   const togglebtn = document.getElementsByClassName('btn-toggle')[0];
   const links = document.getElementsByClassName('navbar-li')[0];
+  const bars = document.getElementsByClassName('span') [0];
   togglebtn.addEventListener('click', () => {
-    links.classList.toggle('activ')
+    links.classList.toggle('activ');
+    bars.classList.toggle('activ');
+    
+    
   })
 // smooth scrolling
 

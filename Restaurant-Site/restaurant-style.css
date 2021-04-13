@@ -147,6 +147,7 @@ p{margin:0.75rem 0;}
   height:2px;
   background:var(--secondary-color);
 }
+
 .navbar-li.activ{
   top:0;
   
