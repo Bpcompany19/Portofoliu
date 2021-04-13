@@ -6,9 +6,11 @@
 
 body{
     font-family: 'Roboto Mono', monospace;
-    overflow-x: hidden;
-   
-    
+    overflow-x:hidden;
+    width:100vw;
+}
+html{
+    width:100vw;
 }
 .green-text{
     color:#006208;
@@ -439,7 +441,7 @@ body{
         height:30vh;
     }
     #poza-mare h1, #categorii h1{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     #categorii p{
         font-size:1.1rem;
