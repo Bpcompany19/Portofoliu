@@ -136,47 +136,62 @@ body{
     text-decoration: none;
     margin-top:1rem;
     color:#8B4513;
-    border:1px #8B4513 dashed;
-    padding:0.2rem; 
+    border:3px #8B4513 solid;;
+    padding:0.4rem; 
+    opacity:0.9;
+    border-radius:8px;
 }
 #page-2 .content a:hover{
-      border:1px solid;
+    opacity:100%;
+    background:#8B4513;
+    border:3px #8B4513 solid;
+    color:#cc9863;
 }
 #page-3 .content a{
     text-decoration: none;
     margin-top:1rem;
     color:#f4f4f4;
-    border:1px dashed #f4f4f4;
+    border:3px #f4f4f4 solid;;
     padding:0.4rem; 
-    opacity:0.8;
+    opacity:0.9;
+    border-radius:8px;
 }
 #page-3 .content a:hover{
-    border:1px solid;
     opacity:100%;
+    background:#f4f4f4;
+    border:3px #730505 solid;
+    color:#730505;
 }
 #page-4 .content a{
     text-decoration: none;
     margin-top:1rem;
     color:#333;
-    border:1px #333 dashed;
+    border:3px #333 solid;;
     padding:0.4rem; 
     opacity:0.9;
+    border-radius:8px;
 }
 #page-4 .content a:hover{
-    border:1px solid;
     opacity:100%;
+    background:#333;
+    border:3px #ffa500 solid;
+    color:#ffa500;
 }
+
 #page-5 .content a{
     text-decoration: none;
     margin-top:1rem;
     color:#f4f4f4;
-    border:1px #f4f4f4 dashed;
+    border:3px #f4f4f4 solid;;
     padding:0.4rem; 
     opacity:0.9;
+    border-radius:8px;
 }
 #page-5 .content a:hover{
-    border:1px solid;
     opacity:100%;
+    background:#f4f4f4;
+    border:3px #006208 solid;
+    color:#006208;
 }
  
 /* page 6 contact */
@@ -295,7 +310,7 @@ body{
 }
 
 @media(max-width:600px){
-    #page-2 .btn, #page-3 .btn, #page-4 .btn,#page-5 .btn,
+    #page-2 .btn, #page-3 .btn, #page-4 .btn,#page-5 .btn, #page-6 .btn,
     #page-2 a, #page-3 a, #page-4 a{
          padding: 0.4rem;
          font-size: 1rem;
@@ -307,13 +322,13 @@ body{
 }
 @media(max-width:450px)
 { 
-    #page-5 h1{
+    #page-6 h1{
         font-size:2rem;
     }
-    #page-5 .btn-contact{
+    #page-6 .btn-contact{
         width:40%;
     }
-    #page-5 .contact-form, #page-5{
+    #page-6 .contact-form, #page-5{
         padding:1rem;
     }
 }
