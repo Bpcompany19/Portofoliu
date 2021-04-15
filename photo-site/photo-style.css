@@ -922,7 +922,7 @@ html{
        width:100%;
    }
    #galerie img:hover{
-       opacity:0.9;
+      opacity:0.95;
    }
    #galerie p:first-child{
        padding:1rem;
@@ -1072,4 +1072,9 @@ html{
        text-align: center;
        
     }
+}
+.mini-contact{
+    background:#f4f4f4;
+    padding:1rem;
+    font-weight: bolder;
 }
