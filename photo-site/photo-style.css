@@ -751,7 +751,7 @@ html{
     text-align: center;
     margin-top:5rem;
     background:url(./img/poza4.JPG) center center/cover no-repeat;
-    height:40vh;
+    height:50vh;
     display:flex;
     justify-content: center;
     align-items: flex-end;
@@ -778,7 +778,7 @@ html{
      }
      #servicii-poza{
          background:url(./img/servicii.jpg) no-repeat center center/cover;
-         height:60vh;
+         height:70vh;
      }
      #servicii{
          display:flex;
@@ -886,7 +886,7 @@ html{
         line-height:1.4;
      }
      #servicii-poza2{
-         background:url(./img/servicii2.jpg) no-repeat center center/cover;
+         background:url(./img/servicii3.jpg) no-repeat center center/cover;
          height:100vh;
      }
      @media(max-width:590px){
@@ -952,3 +952,124 @@ html{
        grid-row: 6/span 2;
    }
  
+
+   /* pagina contact */
+   #poza-contact{
+       background:url(./img/contact.jpg) center center/cover no-repeat;
+       height:70vh;
+   }
+   #contact{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    text-align:left
+}
+#contact .contact-form{
+    height:auto;
+    width:70%;
+    padding:0.5rem;
+    margin:2rem 1rem;
+    display:flex;
+    flex-direction: column;
+    flex:3;
+    
+    
+  }
+  #contact .contact-form .form-grup{
+    padding:0.5rem;
+  }
+  #contact .contact-form label{
+    display:inline-block;
+  }
+  #contact .contact-form #name,#contact .contact-form #email,#contact .contact-form #text{
+    width:100%;
+    padding:0.5rem;
+    margin:.2rem 0;
+    border-radius: 10px;
+    border-radius: 6px;
+    border:1px solid #333;
+  
+  }
+  #contact .contact-form textarea{
+    width:100%;
+    height:3rem;
+    margin:.2rem 0;
+    border-radius: 6px;
+    border:1px solid #333;
+  }
+  #contact h1{
+    font-family: 'New Tegomin', serif;
+    border-bottom: 2px solid #f4f4f4;
+    color:#f4f4f4;
+  }
+  .btn-contact{
+    padding:.6rem;
+    display:inline-block;
+    width:20%;
+    align-self: center;
+    border:2px solid #006208;
+
+   }
+.btn-contact:hover{
+      cursor:pointer;
+      border:2px solid #004405;
+}
+#contact{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding:1rem;
+    height:auto;
+}
+#contact .date-contact{
+    flex:2;
+    box-shadow: 5px 8px 14px #004405;
+    margin-top:3rem;
+    height:100%;
+    padding:1rem;
+}
+
+#contact .date-contact h3{
+    margin-top:2rem;
+}
+@media(max-width:840px){
+    #contact .date-contact{
+        flex:1;
+        padding:0.5rem;
+        margin-top:1.5rem;
+    }
+    #contact .contact-form{
+        margin:0.5rem;
+    }
+}
+@media(max-width:600px){
+    #contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact .contact-form{
+        margin-top:2rem;
+        width:80%;
+}
+}
+@media(max-width:462px){
+    #contact .date-contact{
+       width:95%;
+       text-align: center;
+       
+    }
+    #contact{
+        padding-left:10px;
+    }
+    .btn-contact{
+        width:40%;
+    }
+}
+@media(max-width:462px){
+    #contact .date-contact{
+       width:98%;
+       text-align: center;
+       
+    }
+}
