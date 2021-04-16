@@ -89,7 +89,6 @@ h1,h2,h3,h4,h5,h6:hover{
   background: rgba(0,0,0,0);
   left:0;
   border-top:4px solid rgba(199, 21, 21,0.6);
-  position:sticky;
 }
 #navbar ul {
   display:flex;
@@ -166,6 +165,7 @@ text-align:center;
   cursor:default;
   animation-timing-function: ease-in-out;
   position:relative;
+  z-index: 0;
 }
 @keyframes animation1{
     from{
@@ -181,6 +181,7 @@ text-align:center;
   cursor:default;
   animation-timing-function: ease-in-out;
   position:relative;
+  z-index: 0;
   
 }
 @keyframes animation2{
@@ -378,17 +379,30 @@ justify-content: space-between;
   gap:0;
 }
 .links{
-  display:none;
+  position: absolute;
+  left:-500px;
+  background:rgba(178,0,0,0.95);
+  width:82%;
+  height:100vh;
+  transition: left 1s ease-out;
+  z-index: 4;
 }
 .links.activ-ham{
-  display:flex;
+  left:0px;
 }
 #navbar ul{
   flex-direction: column;
+  width:100%;
+  padding:1rem;
+  
  
 }
 #navbar ul li{
   padding:0.5rem;
+  margin-top:0.5rem;
+}
+#navbar ul li a:hover{
+  color:#333;
 }
 #navbar .logo img{
   padding:0.2rem;
@@ -396,11 +410,13 @@ justify-content: space-between;
   height:130px;
 }
 #showcase{
-  height:50vh;
+  height:70vh;
+  z-index:0;
 }
 
 #showcase h1, #showcase h2{
   font-size:2.5rem;
+  z-index:1;
 }
 #header1{
   height:auto;
