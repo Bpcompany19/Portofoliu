@@ -878,8 +878,9 @@ html{
      .text-jos .text-box .text-mini h2:first-child{
          background:#006208;
          color:white;
-         padding:0.1rem;
+         padding:0.2rem;
          margin-right:0.5rem;
+         border-radius:7px;
      }
      .text-jos .text-box p{
         margin-top:1rem;
