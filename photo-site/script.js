@@ -1,8 +1,10 @@
 const btntoggle = document.getElementsByClassName('btn-toggle')[0]
 const links = document.getElementsByClassName('links')[0]
-
+const span =document.getElementsByClassName('span');
+const navbar=document.getElementById('navbar');
 btntoggle.addEventListener('click', () =>{
-    links.classList.toggle('activ')
+    links.classList.toggle('activ');
+    btntoggle.classList.toggle('change');
 })
 
 

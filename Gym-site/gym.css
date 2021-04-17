@@ -390,6 +390,7 @@ justify-content: space-between;
 .links.activ-ham{
   left:0px;
 }
+
 #navbar ul{
   flex-direction: column;
   width:100%;

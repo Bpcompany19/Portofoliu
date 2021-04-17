@@ -25,11 +25,11 @@ lightbox.addEventListener('click', e =>{
 const togglebutton = document.getElementsByClassName('toggle-btn') [0];
 const links = document.getElementsByClassName('links') [0];
 const span =document.getElementsByClassName('red-text')[0];
-const site=document.querySelectorAll('body');
 
 togglebutton.addEventListener('click', () => {
     links.classList.toggle('activ-ham');
-    site.style.opacity('0.7');
+   
+   
     
 })
 

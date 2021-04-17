@@ -78,15 +78,17 @@ html{
     width:19px;
     height:22px;
     position:absolute;
-    top:1.7rem;
-    right:1rem;
+    top:1.4rem;
+    left:1rem;
     justify-content: space-evenly;
 }
 .btn-toggle span{
     width:100%;
     height:2px;
     background:#006208;
+    transition: all .7s;
 }
+
 @media(max-width:940px){
     #navbar{
         padding:1rem 0.5rem;
@@ -112,6 +114,7 @@ html{
         width:100%;
         z-index:99;
     }
+     
     #navbar ul {
         flex-direction: column;
         text-align:center;
@@ -133,6 +136,17 @@ html{
     }
      .activ{
         left:0;
+    }
+    .change .span-1{
+        transform: rotateZ(-405deg) translate(-5px, 4px);
+        
+    }
+    .change .span-2{
+        opacity:0;
+    }
+    .change .span-3{
+        transform: rotateZ(405deg) translate(-4px, -4px);
+        
     }
 }
     @media(max-width:743px)
