@@ -145,7 +145,7 @@ padding:0.5rem 0;
 }
 /* header */
 #header{
-  background:url("./gym-image/showcase.jpg") no-repeat center center/cover;
+  background:url("./gym-image/showcase\ \(1\).jpg") no-repeat center center/cover;
   height:100vh;
 }
 #showcase{
@@ -216,7 +216,7 @@ text-align:center;
 /* header 1 */
 
 #header1{
-  background:url("./gym-image/showcase.jpg") no-repeat center/cover;
+  background:url("./gym-image/showcase\ \(1\).jpg") no-repeat center/cover;
   height:40vh;
 }
 #header1 h1{
