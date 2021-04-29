@@ -106,7 +106,7 @@ html{
         top:64px;
         left:-1000px;
         text-align: center;
-        transition:left 0.8s ease-out;
+        transition:left 0.5s ease-out;
         background:#006208;
         padding:0.5rem;
         height:auto;
@@ -948,7 +948,7 @@ html{
        grid-template-columns: repeat(3,1fr);
        grid-gap: 1rem;
        height:auto;
-       padding:1rem;
+       padding:0.75rem;
    }
    .poze img:nth-child(1){
        display:grid;
