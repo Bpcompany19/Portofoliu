@@ -11,6 +11,21 @@ body{
 html{
     width:100vw;
 }
+.loading{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:99;
+    background:white;
+}
+.loading img{
+    width:80px;
+}
 .green-text{
     color:#006208;
     text-decoration: none;
