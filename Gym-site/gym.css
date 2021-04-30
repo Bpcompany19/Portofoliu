@@ -387,18 +387,18 @@ justify-content: space-between;
   background:rgba(178,0,0,0.95);
   width:83%;
   height:100vh;
-  transform: scale(0);
-  transition: all .5s ease-out;
+  transform: scaleX(0);
+  transition: right .5s ease-out;
   z-index: 4;
  
 }
 .links.activ-ham{
   right:0px;
-  animation: meniu 0.15s forwards ease-out;
+  animation: meniu 0.4s forwards ease-out;
 }
 @keyframes meniu {
   to{
-    transform: scale(1);
+    transform: scaleX(1);
   }
   
 }

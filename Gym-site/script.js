@@ -37,4 +37,3 @@ togglebutton.addEventListener('click', () => {
 togglebutton.addEventListener('click', () =>{
     span.classList.remove('red-text');
 })
-
